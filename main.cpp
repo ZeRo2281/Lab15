@@ -1,7 +1,10 @@
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
-	
+
 }
 
 bool IsLeapYear(int y)
@@ -9,17 +12,17 @@ bool IsLeapYear(int y)
 	return (y % 4 == 0) && (y % 100 != 0) || (y % 400 == 0);
 }
 
-(int,int) LaterInYear(int d1, int m1, int d2, int m2)
+void LaterInYear(int d1, int m1, int d2, int m2)
 {
 	if (m1 > m2)
-		return (d1, m1);
+		cout << "Первый день ближе к Новому году";
 	else if (m2 > m1)
-		return (d2, m2);
+		cout << "Второй день ближе к Новому году";
 	else if (d1 > d2)
-		return (d1, m1);
+		cout << "Первый день ближе к Новому году";
 	else if (d2 > d1)
-		return (d2, m2)
-	else return (-1, -1);
+		cout << "Второй день ближе к Новому году";
+	else cout << "Введен один и тот же день";
 }
 
 int DaysInYear(int y)
