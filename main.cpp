@@ -2,10 +2,6 @@
 
 using namespace std;
 
-int main()
-{
-
-}
 
 bool IsLeapYear(int y)
 {
@@ -41,9 +37,15 @@ int DaysInYearRange(int y1, int y2)
 			sum += 366;
 		else sum += 365;
 	}
+	return sum;
 }
 
 int SeconsInHours(int h)
 {
 	return h * 24 * 60;
+}
+
+int main()
+{
+
 }
