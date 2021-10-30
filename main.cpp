@@ -42,3 +42,8 @@ int DaysInYearRange(int y1, int y2)
 		else sum += 365;
 	}
 }
+
+int SeconsInHours(int h)
+{
+	return h * 24 * 60;
+}
