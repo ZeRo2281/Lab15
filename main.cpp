@@ -28,3 +28,14 @@ int DaysInYear(int y)
 		return 366;
 	else return 365;
 }
+
+int DaysInYearRange(int y1, int y2)
+{
+	int sum = 0;
+	for (int i = y1; i <= y2; i++)
+	{
+		if (IsLeapYear(i))
+			sum += 366;
+		else sum += 365;
+	}
+}
