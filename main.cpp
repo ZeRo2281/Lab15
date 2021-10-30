@@ -21,3 +21,10 @@ bool IsLeapYear(int y)
 		return (d2, m2)
 	else return (-1, -1);
 }
+
+int DaysInYear(int y)
+{
+	if (IsLeapYear(y))
+		return 366;
+	else return 365;
+}
